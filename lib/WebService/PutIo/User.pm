@@ -6,6 +6,7 @@ my $class='user';
 
 sub info { shift->request($class,'info',@_); }
 sub friends { shift->request($class,'friends',@_); }
+sub token { shift->request($class,'acctoken',@_); }
 
 =head1 NAME
 
@@ -33,6 +34,11 @@ Returns more detailed info about the user.
 =head2 friends
 
 Returns user's friend list.
+
+=head2 token
+
+Returns user's access token.
+
 
 =head1 COPYRIGHT AND LICENSE
 
